@@ -55,7 +55,7 @@ Boolean to enable or disable the developer console. By default it is `true`.
 
 #### GameManager.hideCursor
 `public static bool hideCursor`<br />
-Boolean to enable or disable the mouse cursor. By default it is `true`.
+Boolean to enable or disable the mouse cursor. By default it is `false`.
 
 #### GameManager.UsingConsole
 `public static bool UsingConsole`<br />
