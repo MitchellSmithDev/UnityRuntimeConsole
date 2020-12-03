@@ -68,11 +68,11 @@ Boolean that shows if the console is open. (Read Only)
 Boolean that shows if the console is minimized. (Read Only)
 
 #### GameManager.CommandPrefix
-`public static string CommandPrefix`
+`public static string CommandPrefix`<br />
 The prefix that all commands start with when entered into the console. (Read Only)
 
 #### GameManager.CommandCount
-`public static int CommandCount`
+`public static int CommandCount`<br />
 Returns how many commands are available. (Read Only)
 
 #### GameManager.Command()
