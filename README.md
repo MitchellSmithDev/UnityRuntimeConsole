@@ -69,7 +69,7 @@ Boolean that shows if the console is minimized. (Read Only)
 `public static string CommandPrefix`
 The prefix that all commands start with when entered into the console. (Read Only)
 
-### GameManager.CommandCount
+#### GameManager.CommandCount
 `public static int CommandCount`
 Returns how many commands are available. (Read Only)
 
