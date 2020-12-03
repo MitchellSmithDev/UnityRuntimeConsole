@@ -45,6 +45,8 @@ To use your command, simply run the project and open the console and enter your 
 *Note: Arguments are separated by spaces*
 
 ## Documentation
+By adding `#0`, `#1`, or `#2` at the start of commands, the console will color that line as normal, an error, or a warning respectively.
+
 #### GameManager.Instance
 `public static GameManager Instance`<br />
 The singular instance of the Game Manager. (Read Only)
@@ -123,11 +125,11 @@ Clears all lines from the console.
 
 #### GameManager.Console.Input()
 `public void Input(string input, byte type = 0)`<br />
-Sends an input into the console which is then parsed into a command. Type can be set to `0`, `1`, or `2` which sets the line as normal, error, or warning respectively.
+Sends an input into the console which is then parsed into a command. Type can be set to `0`, `1`, or `2` which sets the line as normal, an error, or a warning respectively.
 
 #### GameManager.Console.Respond()
 `public void Respond(string input, byte type = 0)`<br />
-Sends a line into the console which is not parsed. Type can be set to `0`, `1`, or `2` which sets the line as normal, error, or warning respectively.
+Sends a line into the console which is not parsed. Type can be set to `0`, `1`, or `2` which sets the line as normal, an error, or a warning respectively.
 
 #### GameManager.Console.ResetScroll()
 `public void ResetScroll()`<br />
