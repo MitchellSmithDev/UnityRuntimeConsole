@@ -88,6 +88,7 @@ Boolean that shows if the console is minimized. (Read Only)
 
 #### RuntimeConsole.Initialize()
 `public static void Initialize()`<br />
+Initializes the singular Runtime Console instance.
 
 #### RuntimeConsole.Instance[]
 `public string this[int i]`<br />
