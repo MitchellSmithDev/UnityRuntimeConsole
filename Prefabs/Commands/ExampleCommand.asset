@@ -12,4 +12,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d031b79625e14af44964d33020566a90, type: 3}
   m_Name: ExampleCommand
   m_EditorClassIdentifier: 
-  _keyWord: example

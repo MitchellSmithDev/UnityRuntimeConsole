@@ -12,4 +12,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a12f9647a0dd00a49b8f37c320f47843, type: 3}
   m_Name: ClearCommand
   m_EditorClassIdentifier: 
-  _keyWord: clear

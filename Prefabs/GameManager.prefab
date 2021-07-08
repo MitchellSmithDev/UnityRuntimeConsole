@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6793802816041730632
+--- !u!1 &7784957472221857491
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8876871762229236484}
-  - component: {fileID: 1546591309969341822}
+  - component: {fileID: 7784957472221857493}
+  - component: {fileID: 7784957472221857492}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8876871762229236484
+--- !u!4 &7784957472221857493
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6793802816041730632}
+  m_GameObject: {fileID: 7784957472221857491}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,21 +31,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1546591309969341822
+--- !u!114 &7784957472221857492
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6793802816041730632}
+  m_GameObject: {fileID: 7784957472221857491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3fc04766affa6f4b88d76c64b4dd00f, type: 3}
+  m_Script: {fileID: 11500000, guid: 19cecf54c5f485244bc158d5e231ab3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _commandPrefix: /
-  _commands:
-  - {fileID: 11400000, guid: 63b2133c830b5be488cee9e92158eeb0, type: 2}
-  - {fileID: 11400000, guid: 87c888ae2094bed40ae3d46c6e5173d6, type: 2}
-  - {fileID: 11400000, guid: 104599808d777704c9f28c807205f267, type: 2}
-  - {fileID: 11400000, guid: bef78e01ae3f3054bb0610e8128fdca6, type: 2}
+  enableConsole: 1
+  commandPrefix: /
+  consoleFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  commands:
+  - {fileID: 11400000, guid: 51070a58772e45446bd97346cdecae5e, type: 2}
+  - {fileID: 11400000, guid: dc6711226986a034188694948602d4d9, type: 2}
+  - {fileID: 11400000, guid: e7c0bbc1dbd51f84daccb3186644b225, type: 2}
+  - {fileID: 11400000, guid: f9b8bc48b84b4794c82a39688399e2c7, type: 2}

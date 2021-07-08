@@ -51,94 +51,96 @@ By adding `#0`, `#1`, or `#2` at the start of commands, the console will color t
 `public static GameManager Instance`<br />
 The singular instance of the Game Manager. (Read Only)
 
-#### GameManager.ConsoleEnabled
-`public static bool ConsoleEnabled`<br />
-Boolean to enable or disable the developer console. By default it is `true`.
+#### RuntimeConsole.Instance
+`public static RuntimeConsole Instance`<br />
+The singular instance of the console used to assist debugging and developing. (Read Only)
 
-#### GameManager.hideCursor
-`public static bool hideCursor`<br />
-Boolean to enable or disable the mouse cursor. By default it is `false`.
-
-#### GameManager.UsingConsole
-`public static bool UsingConsole`<br />
-Boolean that shows if the console is open. (Read Only)
-
-#### GameManager.MiniConsole
-`public static bool MiniConsole`<br />
-Boolean that shows if the console is minimized. (Read Only)
-
-#### GameManager.CommandPrefix
-`public static string CommandPrefix`<br />
+#### RuntimeConsole.Prefix
+`public static string Prefix`<br />
 The prefix that all commands start with when entered into the console. (Read Only)
 
-#### GameManager.CommandCount
+#### RuntimeConsole.CommandCount
 `public static int CommandCount`<br />
 Returns how many commands are available. (Read Only)
 
-#### GameManager.Command()
+#### RuntimeConsole.textFont
+`public static Font textFont`<br />
+The font for all text seen in the console. By default it is `Arial`.
+
+#### RuntimeConsole.SetCommands()
+`public static void SetCommands(string prefix, ConsoleCommand[] commands)`<br />
+
+#### RuntimeConsole.Command()
 `public static ConsoleCommand Command(int i)`<br />
 Returns a command variable from the array of available commands.
 
-#### GameManager.Console
-`public static GameManager.DevConsole Console`<br />
-The console used to assist debugging and developing. (Read Only)
+#### RuntimeConsole.IsEnabled
+`public static bool IsEnabled`<br />
+Boolean to enable or disable the developer console. By default it is `true`.
 
-#### GameManager.Console[]
+#### RuntimeConsole.Using
+`public static bool Using`<br />
+Boolean that shows if the console is open. (Read Only)
+
+#### RuntimeConsole.Mini
+`public static bool Mini`<br />
+Boolean that shows if the console is minimized. (Read Only)
+
+#### RuntimeConsole.Initialize()
+`public static void Initialize()`<br />
+
+#### RuntimeConsole.Instance[]
 `public string this[int i]`<br />
 Returns a line stored in the console. (Read Only)
 
-#### GameManager.Console.Count
+#### RuntimeConsole.Instance.Count
 `public int Count`<br />
 The amount of lines currently stored in the console. (Read Only)
 
-#### GameManager.Console.Limit
+#### RuntimeConsole.Instance.Limit
 `public int Limit`<br />
 The limit to how many lines can be stored in the console. By default it is `50`.
 
-#### GameManager.Console.BackgroundColor
+#### RuntimeConsole.Instance.BackgroundColor
 `public Color BackgroundColor`<br />
 The background color for the console whenever it is open or minimized. By default it is `Color(0, 0, 0, 0.75f)`.
 
-#### GameManager.Console.NormalColor
+#### RuntimeConsole.Instance.NormalColor
 `public Color NormalColor`<br />
 The normal text color for lines in the console. By default it is `Color.white`.
 
-#### GameManager.Console.ErrorColor
+#### RuntimeConsole.Instance.ErrorColor
 `public Color ErrorColor`<br />
 The text color of errors for lines in the console. By default it is `Color.red`.
 
-#### GameManager.Console.WarningColor
+#### RuntimeConsole.Instance.WarningColor
 `public Color WarningColor`<br />
 The text color of warning for lines in the console. By default it is `Color.yellow`.
 
-#### GameManager.Console.Color()
+#### RuntimeConsole.Instance.Color()
 `public Color Color(int i)`<br />
 Returns the text color of the line stored in the console.
 
-#### GameManager.Console.Update()
+#### RuntimeConsole.Instance.Update()
 `public void Update()`<br />
 Updates the console's line queues to set them to the current limit.
 
-#### GameManager.Console.Clear()
+#### RuntimeConsole.Instance.Clear()
 `public void Clear()`<br />
 Clears all lines from the console.
 
-#### GameManager.Console.Input()
+#### RuntimeConsole.Instance.Input()
 `public void Input(string input, byte type = 0)`<br />
 Sends an input into the console which is then parsed into a command. Type can be set to `0`, `1`, or `2` which sets the line as normal, an error, or a warning respectively.
 
-#### GameManager.Console.Respond()
+#### RuntimeConsole.Instance.Respond()
 `public void Respond(string input, byte type = 0)`<br />
 Sends a line into the console which is not parsed. Type can be set to `0`, `1`, or `2` which sets the line as normal, an error, or a warning respectively.
 
-#### GameManager.Console.ResetScroll()
+#### RuntimeConsole.Instance.ResetScroll()
 `public void ResetScroll()`<br />
 Resets the console scroll.
 
-#### GameManager.Console.NormalGUI()
-`public void NormalGUI()`<br />
-The normal GUI function for the console. **It is not intended for use.**
-
-#### GameManager.Console.MiniGUI()
-`public void MiniGUI()`<br />
-The minimized GUI function for the console. **It is not intended for use.**
+#### RuntimeConsole.Instance.OnGUI()
+`public void OnGUI()`<br />
+The general GUI function for the console. **It is not intended for use.**

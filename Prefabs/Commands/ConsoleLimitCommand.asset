@@ -12,4 +12,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9209609198844bc40ae63be2a6a2aa4a, type: 3}
   m_Name: ConsoleLimitCommand
   m_EditorClassIdentifier: 
-  _keyWord: consoleLimit
